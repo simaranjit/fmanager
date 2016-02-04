@@ -4,5 +4,5 @@
 spl_autoload_register(function ($class) {
 	$firstChunk = explode('\\', $class)[0];
 
-	include $firstChunk . '/src/' . str_replace('\\', '/', $class) . '.php';
+	include 'utils/'.$firstChunk . '/src/' . str_replace('\\', '/', $class) . '.php';
 });

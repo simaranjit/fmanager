@@ -2,13 +2,142 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1e326d1-3472-46da-ab46-518e43eae1f0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/fmanager.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/.coveralls.yml" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/.coveralls.yml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/.gitignore" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/.gitignore" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/.travis.yml" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/.travis.yml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/CONTRIBUTING.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/LICENSE" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/LICENSE" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/README.md" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/composer.json" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/composer.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/phpunit.xml.dist" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/phpunit.xml.dist" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/src/JShrink/Minifier.php" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/src/JShrink/Minifier.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/JShrink/Test/JShrinkTest.php" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/JShrink/Test/JShrinkTest.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/development/input/.gitkeep" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/requests/output/.gitkeep" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/development/output/.gitkeep" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/requests/input/.gitkeep" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/jshrink/input/empty_comment.js" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/jshrink/input/empty_comment.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/jshrink/input/ending_comment.js" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/jshrink/input/ending_comment.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/jshrink/input/prefix_increment.js" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/jshrink/input/prefix_increment.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/jshrink/input/preserve-regex.js" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/jshrink/input/preserve-regex.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/jshrink/input/preserve-strings.js" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/jshrink/input/preserve-strings.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/jshrink/input/preserve_license.js" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/jshrink/input/preserve_license.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/jshrink/input/remove_multiline_comments.js" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/jshrink/input/remove_multiline_comments.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/jshrink/input/remove_oneline_comments.js" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/jshrink/input/remove_oneline_comments.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/jshrink/input/strictmode.js" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/jshrink/input/strictmode.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/jshrink/input/utf_chars.js" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/jshrink/input/utf_chars.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/jshrink/output/empty_comment.js" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/jshrink/output/empty_comment.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/jshrink/output/ending_comment.js" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/jshrink/output/ending_comment.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/jshrink/output/prefix_increment.js" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/jshrink/output/prefix_increment.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/jshrink/output/preserve-regex.js" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/jshrink/output/preserve-regex.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/jshrink/output/preserve-strings.js" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/jshrink/output/preserve-strings.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/jshrink/output/preserve_license.js" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/jshrink/output/preserve_license.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/jshrink/output/remove_multiline_comments.js" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/jshrink/output/remove_multiline_comments.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/jshrink/output/remove_oneline_comments.js" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/jshrink/output/remove_oneline_comments.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/jshrink/output/strictmode.js" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/jshrink/output/strictmode.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/jshrink/output/utf_chars.js" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/jshrink/output/utf_chars.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/minify/input/144.js" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/minify/input/144.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/minify/input/condcomm.js" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/minify/input/condcomm.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/minify/input/issue132.js" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/minify/input/issue132.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/minify/output/144.js" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/minify/output/144.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/minify/output/condcomm.js" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/minify/output/condcomm.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/minify/output/issue132.js" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/minify/output/issue132.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/requests/input/.gitkeep" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/development/output/.gitkeep" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/requests/input/ifreturn.js" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/requests/input/ifreturn.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/requests/input/whitespace.js" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/requests/input/whitespace.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/requests/output/.gitkeep" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/development/input/.gitkeep" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/requests/output/ifreturn.js" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/requests/output/ifreturn.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/requests/output/whitespace.js" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/requests/output/whitespace.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/uglify/README" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/uglify/README" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/uglify/input/array1.js" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/uglify/input/array1.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/uglify/input/array2.js" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/uglify/input/array2.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/uglify/input/array3.js" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/uglify/input/array3.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/uglify/input/array4.js" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/uglify/input/array4.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/uglify/input/assignment.js" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/uglify/input/assignment.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/uglify/input/concatstring.js" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/uglify/input/concatstring.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/uglify/input/empty-blocks.js" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/uglify/input/empty-blocks.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/uglify/input/forstatement.js" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/uglify/input/forstatement.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/uglify/input/if.js" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/uglify/input/if.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/uglify/input/ifreturn2.js" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/uglify/input/ifreturn2.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/uglify/input/null_string.js" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/uglify/input/null_string.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/uglify/input/strict-equals.js" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/uglify/input/strict-equals.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/uglify/input/var.js" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/uglify/input/var.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/uglify/input/with.js" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/uglify/input/with.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/uglify/output/array1.js" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/uglify/output/array1.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/uglify/output/array2.js" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/uglify/output/array2.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/uglify/output/array3.js" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/uglify/output/array3.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/uglify/output/array4.js" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/uglify/output/array4.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/uglify/output/assignment.js" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/uglify/output/assignment.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/uglify/output/concatstring.js" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/uglify/output/concatstring.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/uglify/output/empty-blocks.js" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/uglify/output/empty-blocks.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/uglify/output/forstatement.js" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/uglify/output/forstatement.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/uglify/output/if.js" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/uglify/output/if.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/uglify/output/ifreturn2.js" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/uglify/output/ifreturn2.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/uglify/output/null_string.js" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/uglify/output/null_string.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/uglify/output/strict-equals.js" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/uglify/output/strict-equals.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/uglify/output/var.js" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/uglify/output/var.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/Resources/uglify/output/with.js" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/uglify/output/with.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/bootstrap.php" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/bootstrap.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/JShrink/tests/runTests.sh" afterPath="$PROJECT_DIR$/compiler/utils/JShrink/tests/runTests.sh" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/MattCG/Makefile" afterPath="$PROJECT_DIR$/compiler/utils/MattCG/Makefile" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/MattCG/README.md" afterPath="$PROJECT_DIR$/compiler/utils/MattCG/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/MattCG/bin/delivery" afterPath="$PROJECT_DIR$/compiler/utils/MattCG/bin/delivery" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/MattCG/cjsDelivery.php" afterPath="$PROJECT_DIR$/compiler/utils/MattCG/cjsDelivery.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/MattCG/composer.json" afterPath="$PROJECT_DIR$/compiler/utils/MattCG/composer.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/MattCG/examples/fruit/modules/apple.js" afterPath="$PROJECT_DIR$/compiler/utils/MattCG/examples/fruit/modules/apple.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/MattCG/examples/fruit/modules/banana.js" afterPath="$PROJECT_DIR$/compiler/utils/MattCG/examples/fruit/modules/banana.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/MattCG/examples/fruit/modules/log.js" afterPath="$PROJECT_DIR$/compiler/utils/MattCG/examples/fruit/modules/log.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/MattCG/examples/fruit/modules/main.js" afterPath="$PROJECT_DIR$/compiler/utils/MattCG/examples/fruit/modules/main.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/MattCG/examples/fruit/modules/quince.js" afterPath="$PROJECT_DIR$/compiler/utils/MattCG/examples/fruit/modules/quince.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/MattCG/examples/globals/globals.js" afterPath="$PROJECT_DIR$/compiler/utils/MattCG/examples/globals/globals.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/MattCG/examples/globals/main.js" afterPath="$PROJECT_DIR$/compiler/utils/MattCG/examples/globals/main.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/MattCG/examples/globals/utilities.js" afterPath="$PROJECT_DIR$/compiler/utils/MattCG/examples/globals/utilities.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/MattCG/src/MattCG/cjsDelivery/CommandLineRunner.php" afterPath="$PROJECT_DIR$/compiler/utils/MattCG/src/MattCG/cjsDelivery/CommandLineRunner.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/MattCG/src/MattCG/cjsDelivery/Delivery.php" afterPath="$PROJECT_DIR$/compiler/utils/MattCG/src/MattCG/cjsDelivery/Delivery.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/MattCG/src/MattCG/cjsDelivery/DeliveryFactory.php" afterPath="$PROJECT_DIR$/compiler/utils/MattCG/src/MattCG/cjsDelivery/DeliveryFactory.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/MattCG/src/MattCG/cjsDelivery/DependencyResolverInterface.php" afterPath="$PROJECT_DIR$/compiler/utils/MattCG/src/MattCG/cjsDelivery/DependencyResolverInterface.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/MattCG/src/MattCG/cjsDelivery/Exception.php" afterPath="$PROJECT_DIR$/compiler/utils/MattCG/src/MattCG/cjsDelivery/Exception.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/MattCG/src/MattCG/cjsDelivery/FileDependencyResolver.php" afterPath="$PROJECT_DIR$/compiler/utils/MattCG/src/MattCG/cjsDelivery/FileDependencyResolver.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/MattCG/src/MattCG/cjsDelivery/FileIdentifierManager.php" afterPath="$PROJECT_DIR$/compiler/utils/MattCG/src/MattCG/cjsDelivery/FileIdentifierManager.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/MattCG/src/MattCG/cjsDelivery/FlatIdentifierGenerator.php" afterPath="$PROJECT_DIR$/compiler/utils/MattCG/src/MattCG/cjsDelivery/FlatIdentifierGenerator.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/MattCG/src/MattCG/cjsDelivery/IdentifierGeneratorInterface.php" afterPath="$PROJECT_DIR$/compiler/utils/MattCG/src/MattCG/cjsDelivery/IdentifierGeneratorInterface.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/MattCG/src/MattCG/cjsDelivery/IdentifierManagerInterface.php" afterPath="$PROJECT_DIR$/compiler/utils/MattCG/src/MattCG/cjsDelivery/IdentifierManagerInterface.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/MattCG/src/MattCG/cjsDelivery/MinIdentifierGenerator.php" afterPath="$PROJECT_DIR$/compiler/utils/MattCG/src/MattCG/cjsDelivery/MinIdentifierGenerator.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/MattCG/src/MattCG/cjsDelivery/Module.php" afterPath="$PROJECT_DIR$/compiler/utils/MattCG/src/MattCG/cjsDelivery/Module.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/MattCG/src/MattCG/cjsDelivery/OutputGenerator.php" afterPath="$PROJECT_DIR$/compiler/utils/MattCG/src/MattCG/cjsDelivery/OutputGenerator.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/MattCG/src/MattCG/cjsDelivery/OutputRendererInterface.php" afterPath="$PROJECT_DIR$/compiler/utils/MattCG/src/MattCG/cjsDelivery/OutputRendererInterface.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/MattCG/src/MattCG/cjsDelivery/PragmaManager.php" afterPath="$PROJECT_DIR$/compiler/utils/MattCG/src/MattCG/cjsDelivery/PragmaManager.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/MattCG/src/MattCG/cjsDelivery/SignalSender.php" afterPath="$PROJECT_DIR$/compiler/utils/MattCG/src/MattCG/cjsDelivery/SignalSender.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/MattCG/src/MattCG/cjsDelivery/SignalSenderInterface.php" afterPath="$PROJECT_DIR$/compiler/utils/MattCG/src/MattCG/cjsDelivery/SignalSenderInterface.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/MattCG/src/MattCG/cjsDelivery/TemplateOutputRenderer.php" afterPath="$PROJECT_DIR$/compiler/utils/MattCG/src/MattCG/cjsDelivery/TemplateOutputRenderer.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/MattCG/tests/bootstrap.php" afterPath="$PROJECT_DIR$/compiler/utils/MattCG/tests/bootstrap.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/MattCG/tests/modules/apple/index.js" afterPath="$PROJECT_DIR$/compiler/utils/MattCG/tests/modules/apple/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/MattCG/tests/modules/banana/banana.js" afterPath="$PROJECT_DIR$/compiler/utils/MattCG/tests/modules/banana/banana.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/MattCG/tests/modules/banana/tree.js" afterPath="$PROJECT_DIR$/compiler/utils/MattCG/tests/modules/banana/tree.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/MattCG/tests/modules/data.json" afterPath="$PROJECT_DIR$/compiler/utils/MattCG/tests/modules/data.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/MattCG/tests/modules/grapefruit/lib/grapefruit.js" afterPath="$PROJECT_DIR$/compiler/utils/MattCG/tests/modules/grapefruit/lib/grapefruit.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/MattCG/tests/modules/grapefruit/package.json" afterPath="$PROJECT_DIR$/compiler/utils/MattCG/tests/modules/grapefruit/package.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/MattCG/tests/modules/main.js" afterPath="$PROJECT_DIR$/compiler/utils/MattCG/tests/modules/strawberry/main.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/MattCG/tests/modules/pear/index.js" afterPath="$PROJECT_DIR$/compiler/utils/MattCG/tests/modules/pear/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/MattCG/tests/modules/pear/pips.js" afterPath="$PROJECT_DIR$/compiler/utils/MattCG/tests/modules/pear/pips.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/MattCG/tests/modules/pear/stalk.js" afterPath="$PROJECT_DIR$/compiler/utils/MattCG/tests/modules/pear/stalk.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/MattCG/tests/modules/quince/index.js" afterPath="$PROJECT_DIR$/compiler/utils/MattCG/tests/modules/quince/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/MattCG/tests/modules/quince/quince.js" afterPath="$PROJECT_DIR$/compiler/utils/MattCG/tests/modules/quince/quince.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/MattCG/tests/modules/strawberry/main.js" afterPath="$PROJECT_DIR$/compiler/utils/MattCG/tests/modules/main.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/MattCG/tests/modules/strawberry/main.json" afterPath="$PROJECT_DIR$/compiler/utils/MattCG/tests/modules/strawberry/main.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/MattCG/tests/phpunit.xml" afterPath="$PROJECT_DIR$/compiler/utils/MattCG/tests/phpunit.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/MattCG/tests/src/MattCG/cjsDelivery/DeliveryTest.php" afterPath="$PROJECT_DIR$/compiler/utils/MattCG/tests/src/MattCG/cjsDelivery/DeliveryTest.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/MattCG/tests/src/MattCG/cjsDelivery/FileDependencyResolverTest.php" afterPath="$PROJECT_DIR$/compiler/utils/MattCG/tests/src/MattCG/cjsDelivery/FileDependencyResolverTest.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/MattCG/tests/src/MattCG/cjsDelivery/FileIdentifierManagerTest.php" afterPath="$PROJECT_DIR$/compiler/utils/MattCG/tests/src/MattCG/cjsDelivery/FileIdentifierManagerTest.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/MattCG/tests/src/MattCG/cjsDelivery/FlatIdentifierGeneratorTest.php" afterPath="$PROJECT_DIR$/compiler/utils/MattCG/tests/src/MattCG/cjsDelivery/FlatIdentifierGeneratorTest.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/MattCG/tests/src/MattCG/cjsDelivery/MinIdentifierGeneratorTest.php" afterPath="$PROJECT_DIR$/compiler/utils/MattCG/tests/src/MattCG/cjsDelivery/MinIdentifierGeneratorTest.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/MattCG/tests/src/MattCG/cjsDelivery/ModuleTest.php" afterPath="$PROJECT_DIR$/compiler/utils/MattCG/tests/src/MattCG/cjsDelivery/ModuleTest.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/MattCG/tests/src/MattCG/cjsDelivery/OutputGeneratorTest.php" afterPath="$PROJECT_DIR$/compiler/utils/MattCG/tests/src/MattCG/cjsDelivery/OutputGeneratorTest.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/MattCG/tests/src/MattCG/cjsDelivery/OutputRendererDouble.php" afterPath="$PROJECT_DIR$/compiler/utils/MattCG/tests/src/MattCG/cjsDelivery/OutputRendererDouble.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/MattCG/tests/src/MattCG/cjsDelivery/PragmaManagerTest.php" afterPath="$PROJECT_DIR$/compiler/utils/MattCG/tests/src/MattCG/cjsDelivery/PragmaManagerTest.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/compiler/autoload.php" afterPath="$PROJECT_DIR$/compiler/utils/autoload.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/compiler/compile.php" afterPath="$PROJECT_DIR$/compiler/compile.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/script.js" afterPath="$PROJECT_DIR$/js/script.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/main.js" afterPath="$PROJECT_DIR$/source/main.js" />
     </list>
     <ignored path="fmanager.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,11 +159,103 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="compile.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="var.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/uglify/input/var.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="autoload.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/compiler/utils/autoload.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.6666665">
+              <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="compile.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/compiler/compile.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.21744967">
-              <caret line="9" column="55" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
+            <state vertical-scroll-proportion="-7.3333335">
+              <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/script.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.9133859">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JShrinkTest.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/compiler/utils/JShrink/tests/JShrink/Test/JShrinkTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommonJS.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/compiler/utils/CommonJS/src/CommonJS/CommonJS.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.9259257">
+              <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+              <folding>
+                <element signature="e#27#39#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Delivery.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/compiler/utils/MattCG/src/MattCG/cjsDelivery/Delivery.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.6666665">
+              <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommonJSTest.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/compiler/utils/CommonJS/tests/CommonJS/CommonJSTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Minifier.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/compiler/utils/JShrink/src/JShrink/Minifier.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="6.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -48,7 +269,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/compiler/utils/CommonJS/src/CommonJS/CommonJS.php" />
+        <option value="$PROJECT_DIR$/compiler/utils/autoload.php" />
         <option value="$PROJECT_DIR$/compiler/compile.php" />
+        <option value="$PROJECT_DIR$/source/main.js" />
       </list>
     </option>
   </component>
@@ -57,7 +281,7 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP" />
   <component name="ProjectFrameBounds">
     <option name="x" value="65" />
     <option name="y" value="-4" />
@@ -117,7 +341,21 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="compiler" />
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fmanager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fmanager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -131,6 +369,48 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/compiler/utils/CommonJS/src/CommonJS" />
+      <recent name="$PROJECT_DIR$/compiler/utils" />
+    </key>
+  </component>
+  <component name="RunManager" selected="PHP Script.compile.php">
+    <configuration default="false" name="compile.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/compiler/compile.php">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <envs />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="PHP Script.compile.php" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="PHP Script.compile.php" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="TaskManager">
@@ -151,18 +431,18 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32917705" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -173,10 +453,148 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/minify/input/144.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/minify/input/condcomm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/minify/input/issue132.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/minify/output/144.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/minify/output/condcomm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/minify/output/issue132.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/uglify/input/if.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/compiler/utils/JShrink/tests/Resources/uglify/input/var.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/compiler/utils/CommonJS/tests/CommonJS/CommonJSTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/compiler/utils/MattCG/src/MattCG/cjsDelivery/Delivery.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.6666665">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/compiler/utils/JShrink/tests/JShrink/Test/JShrinkTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/compiler/utils/JShrink/src/JShrink/Minifier.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="6.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/compiler/utils/CommonJS/src/CommonJS/CommonJS.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.9259257">
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+          <folding>
+            <element signature="e#27#39#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/compiler/utils/autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.6666665">
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/compiler/compile.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21744967">
-          <caret line="9" column="55" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
+        <state vertical-scroll-proportion="-7.3333335">
+          <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.9133859">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>

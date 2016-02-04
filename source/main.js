@@ -1,1 +1,1 @@
-alert(1);
+var $ = require('jquery');

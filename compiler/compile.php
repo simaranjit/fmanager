@@ -7,16 +7,14 @@ use MattCG\cjsDelivery\Delivery;
  *
  * Write CommonJS-syntax JavaScript modules and deliver them to clients as a single file.
  *
+ * How does it work
+ *
+ *
  * @author Simaranjit Singh <simaranjit.singh@virdi.me>
  */
 
-require_once __DIR__ . '/autoload.php';
+require_once __DIR__ . '/utils/autoload.php';
 
-$includes = array('../source/modules');
-$delivery = Delivery::create(array('includes' => $includes));
-$delivery->addModule('../source/main');
-$delivery->setMainModule('../source/main');
-//$content = $delivery->getOutput();
-$content = JShrink\Minifier::minify($delivery->getOutput());
+(new \CommonJS\CommonJS())->save(true);
 
-file_put_contents('../js/script.js', $content);
+

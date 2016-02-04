@@ -1,0 +1,36 @@
+#!/usr/bin/php
+<?php
+
+require_once __DIR__ . '/../cjsDelivery.php';
+
+$clr = new MattCG\cjsDelivery\CommandLineRunner();
+
+$clr->setOptions(getopt($clr->getOptions(), $clr->getLongOptions()));
+
+if ($clr->getDebugMode()) {
+	$clr->setDebugFunction(function($message) {
+		echo $message, '...', PHP_EOL;
+	});
+}
+
+try {
+	$output = $clr->run();
+} catch (MattCG\cjsDelivery\Exception $e) {
+
+	$reporterror = function($e, $reporterror) {
+		echo 'Error: ', $e->getMessage(), ' (', $e->getCode(),')', PHP_EOL;
+		if ($e->getPrevious()) {
+			$reporterror($e->getPrevious(), $reporterror);
+		}
+	};
+
+	$reporterror($e, $reporterror);
+	
+	exit($e->getCode());
+}
+
+if (!$clr->getDebugMode()) {
+	if ($output) {
+		echo $output, PHP_EOL;
+	}
+}

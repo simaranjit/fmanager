@@ -1,0 +1,29 @@
+{
+	"name": "mattcg/cjsdelivery",
+	"version": "0.4.3",
+	"homepage": "https://github.com/mattcg/cjsDelivery",
+	"description": "Deliver CommonJS-syntax JavaScript modules to clients as a single file.",
+	"keywords": ["commonjs", "javascript", "modules", "compiler"],
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Matthew Caruana Galizia",
+			"email": "m@m.cg",
+			"homepage": "http://m.cg/"
+		}
+	],
+	"require": {
+		"php": ">=5.4.0",
+		"aura/signal": "1.0.*"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "3.7.*",
+		"satooshi/php-coveralls": "0.6.*"
+	},
+	"autoload": {
+		"psr-0": {
+			"MattCG\\cjsDelivery": "src/"
+		}
+	},
+	"bin": ["bin/delivery"]
+}

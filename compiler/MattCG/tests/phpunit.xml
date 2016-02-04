@@ -1,0 +1,58 @@
+<phpunit
+	colors="true"
+	convertErrorsToExceptions="true"
+	convertNoticesToExceptions="true"
+	convertWarningsToExceptions="true"
+	processIsolation="false"
+	stopOnError="false"
+	stopOnFailure="false"
+	stopOnIncomplete="false"
+	stopOnSkipped="false"
+	syntaxCheck="true"
+	verbose="true"
+	bootstrap="bootstrap.php">
+	<logging>
+		<log type="junit" target="../build/logs/phpunit.xml" />
+		<log type="coverage-clover" target="../build/logs/coverage/clover.xml" />
+		<log type="coverage-html" target="../build/logs/coverage/" charset="UTF-8" />
+		<log type="testdox-text" target="../build/logs/testdox.txt" />
+		<log type="testdox-html" target="../build/logs/testdox.html" />
+	</logging>
+	<php>
+		<includePath>.</includePath>
+		<ini name="memory_limit" value="512M" />
+		<ini name="error_log" value="../build/logs/error.log" />
+	</php>
+	<filter>
+		<blacklist>
+			<directory suffix=".php">../vendor</directory>
+		</blacklist>
+		<whitelist processUncoveredFilesFromWhitelist="true">
+			<directory suffix=".php">../src</directory>
+		</whitelist>
+	</filter>
+	<testsuites>
+		<testsuite name="Identifier generator tests">
+			<file>src/MattCG/cjsDelivery/FlatIdentifierGeneratorTest.php</file>
+			<file>src/MattCG/cjsDelivery/MinIdentifierGeneratorTest.php</file>
+		</testsuite>
+		<testsuite name="Identifier manager tests">
+			<file>src/MattCG/cjsDelivery/FileIdentifierManagerTest.php</file>
+		</testsuite>
+		<testsuite name="Dependency resolver tests">
+			<file>src/MattCG/cjsDelivery/FileDependencyResolverTest.php</file>
+		</testsuite>
+		<testsuite name="Model tests">
+			<file>src/MattCG/cjsDelivery/ModuleTest.php</file>
+		</testsuite>
+		<testsuite name="Output tests">
+			<file>src/MattCG/cjsDelivery/OutputGeneratorTest.php</file>
+		</testsuite>
+		<testsuite name="Signal listener tests">
+			<file>src/MattCG/cjsDelivery/PragmaManagerTest.php</file>
+		</testsuite>
+		<testsuite name="Delivery tests">
+			<file>src/MattCG/cjsDelivery/DeliveryTest.php</file>
+		</testsuite>
+	</testsuites>
+</phpunit>

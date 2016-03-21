@@ -1,7 +1,5 @@
 <?php
 
-use MattCG\cjsDelivery\Delivery;
-
 /**
  * CommonJS compiler
  *

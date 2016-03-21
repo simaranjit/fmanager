@@ -1,0 +1,81 @@
+body, html {
+    height: 100%;
+}
+
+body {
+    background: #466368;
+    background: linear-gradient(to right, #f6f1d3, #648880 85%, #293f50);
+}
+
+/* Login template */
+.login-template {
+    height: 100%;
+}
+
+.login-left-box, .login-right-box {
+    background-image: url("../images/login-bg.png");
+    height: 100%;
+    width: 50%;
+    background-repeat: repeat;
+}
+
+.login-left-box {
+    float: left;
+    border-right: #A2B4A3 solid 4px;
+}
+
+.login-right-box {
+    float: right;
+    border-left: #A2B4A3 solid 4px;
+}
+
+.login-box {
+    width: 300px;
+    height: 150px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+
+    background: #fff;
+    border: 1px solid #ddd;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding: 25px 20px 0 20px;
+    z-index: 1000;
+}
+
+.login-box input {
+    padding: 5px;
+    margin-bottom: 4px;
+    width: 100%;
+}
+
+.login-box .button {
+    float: right;
+}
+
+/* End of login template */
+
+/* Welcome screen */
+.welcome-menu {
+    padding: 4px;
+    list-style-type: none;
+    margin: 0;
+}
+
+.welcome-menu > li {
+    padding: 20px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.welcome-menu > li:hover {
+    background-color: #2A4151;
+}
+
+/* end of welcome page */

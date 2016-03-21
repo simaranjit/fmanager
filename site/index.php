@@ -12,9 +12,9 @@ $connection = new \fmanager\libraries\database\connection("mysql:host=127.0.0.1;
 print_r($connection->select('customers'));
 exit;
 
-$ftp = new \fmanager\libraries\ftp\ftp('ftp.beerrightnow.com');
+$ftp = new \fmanager\libraries\ftp\ftp('xxxxxxx');
 
-$ftp->ftp_login('sukh.beerrightnow', 'sukh4$jon&');
+$ftp->ftp_login('xxxxxx', 'xxxx');
 
 // after ftp_login(...)
 $ftp->ftp_pasv(true);

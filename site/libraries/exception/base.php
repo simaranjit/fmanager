@@ -1,0 +1,83 @@
+<?php
+namespace fmanager\libraries\exception;
+
+class base extends \Exception
+{
+
+    const BAD_REQUEST = 400;
+    const UNAUTHORIZED = 401;
+    const FORBIDDEN = 403;
+    const NOT_FOUND = 404;
+    const METHOD_NOT_ALLOWED = 405;
+    const NOT_ACCEPTABLE = 406;
+    const PROXY_AUTHENTICATION_REQUIRED = 407;
+    const REQUEST_TIMEOUT = 408;
+    const CONFLICT = 409;
+    const GOING = 410;
+    const LENGTH_REQUIRED = 411;
+    const PRECONDITION_FAILED = 412;
+    const REQUEST_ENTRY_TOO_LARGE = 413;
+    const REQUEST_URL_TOO_LONG = 414;
+    const UNSUPPORTED_MEDIA_TYPE = 415;
+    const REQUESTED_RANGE_NOT_SATISFIABLE = 416;
+    const EXCEPTION_FAILED = 417;
+    const I_AM_A_TEAPOT = 418;
+    const UNPROCESSABLE_ENTRY = 422;
+    const LOCKED = 423;
+    const FAILED_DEPENDENCY = 424;
+    const UNORDERED_COLLECTION = 425;
+    const UPGRADE_REQUIRED = 426;
+    const RETRY_WITH = 449;
+    const BLOCKED_BY_WINDOWS_PARENTAL_CONTROLS = 450;
+    const INTERNAL_ERROR = 500;
+    const NOT_IMPLEMENTED = 501;
+    const BAD_GATEWAY = 502;
+    const SERVICE_UNAVAILABLE = 503;
+    const GATEWAY_TIMEOUT = 504;
+    const HTTP_VERSION_NOT_SUPPORTED = 505;
+    const VARIENT_ALSO_NEGOTIATES = 506;
+    const INSUFFICENT_STORAGE = 507;
+    const BANDWIDTH_LIMIT_EXCEDEED = 509;
+    const NOT_EXTENDED = 510;
+
+    protected $exceptions = [
+        self::BAD_REQUEST => 'BAD_REQUEST',
+        self::UNAUTHORIZED => 'UNAUTHORIZED',
+        self::FORBIDDEN => 'FORBIDDEN',
+        self::NOT_FOUND => 'NOT_FOUND',
+        self::METHOD_NOT_ALLOWED => 'METHOD_NOT_ALLOWED',
+        self::NOT_ACCEPTABLE => 'NOT_ACCEPTABLE',
+        self::REQUEST_TIMEOUT => 'REQUEST_TIMEOUT',
+        self::CONFLICT => 'CONFLICT',
+        self::GOING => 'GOING',
+        self::LENGTH_REQUIRED => 'LENGTH_REQUIRED',
+        self::PRECONDITION_FAILED => 'PRECONDITION_FAILED',
+        self::REQUEST_ENTRY_TOO_LARGE => 'REQUEST_ENTRY_TOO_LARGE',
+        self::REQUEST_URL_TOO_LONG => 'REQUEST_URL_TOO_LONG',
+        self::UNSUPPORTED_MEDIA_TYPE => 'UNSUPPORTED_MEDIA_TYPE',
+        self::REQUESTED_RANGE_NOT_SATISFIABLE => 'REQUESTED_RANGE_NOT_SATISFIABLE',
+        self::EXCEPTION_FAILED => 'EXCEPTION_FAILED',
+        self::I_AM_A_TEAPOT => 'I_AM_A_TEAPOT',
+        self::UNPROCESSABLE_ENTRY => 'UNPROCESSABLE_ENTRY',
+        self::LOCKED => 'LOCKED',
+        self::FAILED_DEPENDENCY => 'FAILED_DEPENDENCy',
+        self::UNORDERED_COLLECTION => 'UNORDERED_COLLECTION',
+        self::UPGRADE_REQUIRED => 'UPGRADE_REQUIRED',
+        self::RETRY_WITH => 'RETRY_WITH',
+        self::BLOCKED_BY_WINDOWS_PARENTAL_CONTROLS => 'BLOCKED_BY_WINDOWS_PARENTAL_CONTROLS',
+        self::INTERNAL_ERROR => 'INTERNAL_ERROR',
+        self::NOT_IMPLEMENTED => 'NOT_IMPLEMENTED',
+        self::BAD_GATEWAY => 'BAD_GATEWAY',
+        self::SERVICE_UNAVAILABLE => 'SERVICE_UNAVAILABLE',
+        self::GATEWAY_TIMEOUT => 'GATEWAY_TIMEOUT',
+        self::HTTP_VERSION_NOT_SUPPORTED => 'HTTP_VERSION_NOT_SUPPORTED',
+        self::VARIENT_ALSO_NEGOTIATES => 'VARIENT_ALSO_NEGOTIATES',
+        self::INSUFFICENT_STORAGE => 'INSUFFICENT_STORAGE',
+        self::BANDWIDTH_LIMIT_EXCEDEED => 'BANDWIDTH_LIMIT_EXCEDEED',
+        self::NOT_EXTENDED => 'NOT_EXTENDED'
+    ];
+
+    public function getTItle($code) {
+        return empty($this->exceptions[$code]) ? '' : $this->exceptions[$code];
+    }
+}

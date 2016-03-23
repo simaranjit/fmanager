@@ -3,6 +3,6 @@ var login = require('login');
 
 $(function () {
     $('#login').on('click', function () {
-        login.success($);
+        login.process($);
     });
 })

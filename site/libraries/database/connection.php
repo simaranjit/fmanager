@@ -124,8 +124,10 @@ class connection extends PDO
             if ($pdostmt->execute($this->bind) !== false) {
                 if (preg_match("/^(" . implode("|", array("select", "describe", "pragma")) . ") /i", $this->sql))
                     return $pdostmt->fetchAll(PDO::FETCH_ASSOC);
-                elseif (preg_match("/^(" . implode("|", array("delete", "insert", "update")) . ") /i", $this->sql))
+                elseif (preg_match("/^(" . implode("|", array("delete", "update")) . ") /i", $this->sql))
                     return $pdostmt->rowCount();
+                else if (preg_match("/^(" . implode("|", array("insert")) . ") /i", $this->sql))
+                    return $this->lastInsertId();
             }
         } catch (PDOException $e) {
             $this->error = $e->getMessage();

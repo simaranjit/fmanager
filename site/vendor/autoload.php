@@ -3,7 +3,11 @@
 // Or, using an anonymous function as of PHP 5.3.0
 spl_autoload_register(function ($class) {
     $class = explode('\\', $class);
-    array_shift($class);
+    $primary = array_shift($class);
+
+    if ($primary != 'fmanager') {
+        return;
+    }
 
     $class = implode('\\', $class);
 

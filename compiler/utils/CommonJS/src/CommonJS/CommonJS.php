@@ -43,6 +43,6 @@ class CommonJS {
     public function save ($minify = false) {
         $output = $this->delivery->getOutput();
 
-        file_put_contents('../site/js/script.js', $minify ? JShrink\Minifier::minify($output) : $output); ;
+        file_put_contents('../site/views/default/js/app.js', $minify ? JShrink\Minifier::minify($output) : $output); ;
     }
 }

@@ -13,7 +13,29 @@ class base implements ArrayAccess
 
     public function __construct($id)
     {
-        $this->data = self::getDBConnection()->select(static::Table, static::PrimaryKey . '=' . $id)[0];
+        if (!is_integer($id)) {
+            $id = '"'.$id.'"';
+        }
+
+        $this->data = self::getDBConnection()->select(static::Table, (static::PrimaryKey . '=' . $id));
+
+        if (empty($this->data)) {
+            throw new \Exception('Unable to retrieve data from ' .  static::Table . ' Table where '. static::PrimaryKey .' = ' . $id);
+        }
+
+        $this->data = $this->data[0];
+    }
+
+    static protected function insert ($data) {
+        return self::getDBConnection()->insert(static::Table, $data);
+    }
+
+    static public function delete ($id) {
+        self::getDBConnection()->delete(static::Table, static::PrimaryKey .'='. $id);
+    }
+
+    protected function update ($data, $where) {
+        self::getDBConnection()->update(static::Table, $data, $where);
     }
 
     static public function getAll()
@@ -21,7 +43,7 @@ class base implements ArrayAccess
         return self::getDBConnection()->select(static::Table);
     }
 
-    static private function getDBConnection()
+    static protected function getDBConnection()
     {
         if (!empty(self::$dbConnection)) {
             return self::$dbConnection;
@@ -50,8 +72,20 @@ class base implements ArrayAccess
         unset($this->data[$offset]);
     }
 
-    public function retrieve()
+    public function retrieve($masked = false)
     {
+        if ($masked) {
+            $mask = static::mask();
+
+            $result = [];
+
+            foreach ($this->data as $key => $value) {
+                $result[$mask[$key]] = $value;
+            }
+
+            return $result;
+        }
+
         return $this->data;
     }
 }
